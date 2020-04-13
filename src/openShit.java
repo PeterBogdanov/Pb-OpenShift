@@ -1,5 +1,7 @@
 import java.io.*;
+import java.net.InetAddress;
 import java.nio.charset.StandardCharsets;
+import java.time.LocalTime;
 
 
 public class openShit {
@@ -7,14 +9,18 @@ public class openShit {
 
 
     public static void main(String[] args) {
-        try {
+        int i = 1;
+        do
+            try {
             openShit printArgs = new openShit();
-            printArgs.heyPrint("Ttt TTT ddd");
+            printArgs.heyPrint("Executed: "+i+" Hostname: "+ InetAddress.getLocalHost().getHostName()+" Time: "+ LocalTime.now());
             printArgs.readFile();
-
+            i++;
+            Thread.sleep(2000); //sleep 2s
         } catch (Exception e) {
             e.printStackTrace();
         }
+            while (i<150);
 
     }
 
