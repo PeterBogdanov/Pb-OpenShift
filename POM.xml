@@ -5,6 +5,30 @@
     <groupId>OpenShit</groupId>
     <artifactId>OSPB</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <build>
+        <sourceDirectory>src</sourceDirectory>
+        <outputDirectory>out</outputDirectory>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+
+    </build>
+</project>
 
 <!--
     <dependencies>
@@ -16,6 +40,7 @@
     </dependencies>
 -->
 
+<!--
     <build>
         <sourceDirectory>src</sourceDirectory>
         <plugins>
@@ -29,18 +54,18 @@
                         <configuration>
                             <artifactItems>
                                 <artifactItem>
-                                    <!-- hardcode values, or use properties, depending on what you want
-                                        to do -->
-                                    <!--
+                                    &lt;!&ndash; hardcode values, or use properties, depending on what you want
+                                        to do &ndash;&gt;
+                                    &lt;!&ndash;
                                                                     <groupId>JsonTestMaven</groupId>
                                                                     <artifactId>JsoNMaven</artifactId>
                                                                     <version>0.0.1-SNAPSHOT</version>
                                                                     <type>[ packaging ]</type>
                                                                     <outputDirectory>${project.build.directory}/lib</outputDirectory>
-                                    -->
+                                    &ndash;&gt;
                                 </artifactItem>
                             </artifactItems>
-                            <!-- other configurations here -->
+                            &lt;!&ndash; other configurations here &ndash;&gt;
                         </configuration>
                     </execution>
                 </executions>
@@ -55,7 +80,7 @@
             </plugin>
         </plugins>
     </build>
-</project>
+-->
 
 
 
