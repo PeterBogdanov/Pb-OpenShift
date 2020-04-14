@@ -14,7 +14,6 @@
     <build>
         <sourceDirectory>src</sourceDirectory>
         <outputDirectory>out</outputDirectory>
-
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -26,62 +25,7 @@
                 </configuration>
             </plugin>
         </plugins>
-
     </build>
 </project>
-
-<!--
-    <dependencies>
-        <dependency>
-            <groupId>com.googlecode.json-simple</groupId>
-            <artifactId>json-simple</artifactId>
-            <version>1.1.1</version>
-        </dependency>
-    </dependencies>
--->
-
-<!--
-    <build>
-        <sourceDirectory>src</sourceDirectory>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-dependency-plugin</artifactId>
-                <version>2.7</version>
-                <executions>
-                    <execution>
-                        <id>default-cli</id>
-                        <configuration>
-                            <artifactItems>
-                                <artifactItem>
-                                    &lt;!&ndash; hardcode values, or use properties, depending on what you want
-                                        to do &ndash;&gt;
-                                    &lt;!&ndash;
-                                                                    <groupId>JsonTestMaven</groupId>
-                                                                    <artifactId>JsoNMaven</artifactId>
-                                                                    <version>0.0.1-SNAPSHOT</version>
-                                                                    <type>[ packaging ]</type>
-                                                                    <outputDirectory>${project.build.directory}/lib</outputDirectory>
-                                    &ndash;&gt;
-                                </artifactItem>
-                            </artifactItems>
-                            &lt;!&ndash; other configurations here &ndash;&gt;
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>8</source>
-                    <target>8</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
--->
-
-
 
 
