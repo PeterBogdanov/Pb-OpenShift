@@ -5,7 +5,9 @@ import java.time.LocalTime;
 
 // Start
 public class openShit {
-    private final static String FILE_NAME = "resource//cites.txt";
+
+    private final static String FILE_NAME = "resources//cites.txt";
+
     public static void main(String[] args) {
         int i = 1;
         do
